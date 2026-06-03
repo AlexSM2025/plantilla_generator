@@ -144,7 +144,7 @@ if st.button("Generate Proposal"):
 
     # Net Capital Requirement
     draw.text(
-        (760, 762),
+        (810, 757),
         net_text,
         fill="black",
         font=font_bold
