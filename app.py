@@ -23,10 +23,21 @@ st.title("Proposal Generator")
 # FORM
 # =========================
 
-residence_name = st.text_input(
-    "Residence Name",
-    placeholder="Huang Residence (San Jose)"
+last_name = st.text_input(
+    "Last Name",
+    placeholder="Huang"
 )
+
+city = st.text_input(
+    "City",
+    placeholder="San Jose"
+)
+
+
+residence_line_1 = f"{last_name} Residence"
+
+residence_line_2 = f"({city})"
+
 
 project_value = st.number_input(
     "Total Project Value",
@@ -111,9 +122,18 @@ if st.button("Generate Proposal"):
     # -------------------------
 
     # Residence Name
+    # First line
+    draw.text(
+        (1370, 30),
+        residence_line_1,
+        fill="black",
+        font=font_regular
+    )
+    
+    # Second line
     draw.text(
         (1370, 55),
-        residence_name,
+        residence_line_2,
         fill="black",
         font=font_regular
     )
