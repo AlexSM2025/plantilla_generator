@@ -120,7 +120,7 @@ if st.button("Generate Proposal"):
 
     # Total Project Value
     draw.text(
-        (320, 340),
+        (323, 340),
         project_value_text,
         fill="black",
         font=font_bold
@@ -128,7 +128,7 @@ if st.button("Generate Proposal"):
 
     # Cash Discount
     draw.text(
-        (1440, 500),
+        (1440, 420),
         cash_discount_text,
         fill="black",
         font=font_medium
@@ -136,7 +136,7 @@ if st.button("Generate Proposal"):
 
     # HDM Carve-Out
     draw.text(
-        (1440, 650),
+        (1440, 505),
         hdm_text,
         fill="black",
         font=font_medium
@@ -144,7 +144,7 @@ if st.button("Generate Proposal"):
 
     # Net Capital Requirement
     draw.text(
-        (920, 860),
+        (920, 790),
         net_text,
         fill="black",
         font=font_bold
