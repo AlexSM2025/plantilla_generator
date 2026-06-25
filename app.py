@@ -84,7 +84,7 @@ if st.button("Generate Proposal"):
     # -------------------------
 
     template = Image.open(
-        "templates/solar_battery_hdm.png"
+        "assets/images/solar_battery_hdm.png"
     ).convert("RGB")
 
     draw = ImageDraw.Draw(template)
@@ -94,17 +94,17 @@ if st.button("Generate Proposal"):
     # -------------------------
 
     font_regular = ImageFont.truetype(
-        "fonts/Barlow-Regular.ttf",
+        "assets/fonts/Barlow-Regular.ttf",
         28
     )
 
     font_bold = ImageFont.truetype(
-        "fonts/Barlow-Bold.ttf",
+        "assets/fonts/Barlow-Bold.ttf",
         40
     )
 
     font_medium = ImageFont.truetype(
-        "fonts/Barlow-SemiBold.ttf",
+        "assets/fonts/Barlow-SemiBold.ttf",
         34
     )
 
