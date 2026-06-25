@@ -5,6 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import landscape
 from reportlab.lib.utils import ImageReader
+from templates.integrated_backup.config import FIELDS
 import tempfile
 import os
 
@@ -124,7 +125,8 @@ if st.button("Generate Proposal"):
     # Residence Name
     # First line
     draw.text(
-        (1370, 30),
+        (FIELDS["residence_line_1"]["x"],
+        FIELDS["residence_line_1"]["y"]),
         residence_line_1,
         fill="black",
         font=font_regular
@@ -132,7 +134,8 @@ if st.button("Generate Proposal"):
     
     # Second line
     draw.text(
-        (1370, 55),
+        (FIELDS["residence_line_2"]["x"],
+        FIELDS["residence_line_2"]["y"]),
         residence_line_2,
         fill="black",
         font=font_regular
@@ -140,7 +143,8 @@ if st.button("Generate Proposal"):
 
     # Total Project Value
     draw.text(
-        (338, 340),
+        (FIELDS["project_value"]["x"],
+        FIELDS["project_value"]["y"]),
         project_value_text,
         fill="black",
         font=font_bold
@@ -148,7 +152,8 @@ if st.button("Generate Proposal"):
 
     # Cash Discount
     draw.text(
-        (1444, 424),
+        (FIELDS["cash_discount"]["x"],
+        FIELDS["cash_discount"]["y"]),
         cash_discount_text,
         fill="black",
         font=font_medium
@@ -156,7 +161,8 @@ if st.button("Generate Proposal"):
 
     # HDM Carve-Out
     draw.text(
-        (1444, 517),
+        (FIELDS["hdm_carveout"]["x"],
+        FIELDS["hdm_carveout"]["y"]),
         hdm_text,
         fill="black",
         font=font_medium
@@ -164,7 +170,8 @@ if st.button("Generate Proposal"):
 
     # Net Capital Requirement
     draw.text(
-        (810, 757),
+        (FIELDS["net_capital"]["x"],
+        FIELDS["net_capital"]["y"]),
         net_text,
         fill="black",
         font=font_bold
