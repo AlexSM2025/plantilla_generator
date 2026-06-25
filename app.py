@@ -1,13 +1,8 @@
 # app.py
 
 import streamlit as st
-from PIL import Image, ImageDraw, ImageFont
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import landscape
-from reportlab.lib.utils import ImageReader
-from templates.integrated_backup.config import FIELDS
-import tempfile
-import os
+
+from templates.integrated_backup.render import render_integrated_backup
 
 # =========================
 # PAGE CONFIG
@@ -80,154 +75,23 @@ net_capital = st.number_input(
 
 if st.button("Generate Proposal"):
 
-    # -------------------------
-    # LOAD TEMPLATE
-    # -------------------------
+    data = {
+        "last_name": last_name,
+        "city": city,
+        "project_value": project_value,
+        "cash_discount": cash_discount,
+        "hdm_carveout": hdm_carveout,
+        "net_capital": net_capital
+    }
 
-    template = Image.open(
-        "assets/images/solar_battery_hdm.png"
-    ).convert("RGB")
+    pdf = render_integrated_backup(data)
 
-    draw = ImageDraw.Draw(template)
-
-    # -------------------------
-    # LOAD FONTS
-    # -------------------------
-
-    font_regular = ImageFont.truetype(
-        "assets/fonts/Barlow-Regular.ttf",
-        28
-    )
-
-    font_bold = ImageFont.truetype(
-        "assets/fonts/Barlow-Bold.ttf",
-        40
-    )
-
-    font_medium = ImageFont.truetype(
-        "assets/fonts/Barlow-SemiBold.ttf",
-        34
-    )
-
-    # -------------------------
-    # FORMAT VALUES
-    # -------------------------
-
-    project_value_text = f"${project_value:,.0f}"
-    cash_discount_text = f"${cash_discount:,.0f}"
-    hdm_text = f"${hdm_carveout:,.0f}"
-    net_text = f"${net_capital:,.0f}"
-
-    # -------------------------
-    # DRAW TEXT
-    # -------------------------
-
-    # Residence Name
-    # First line
-    draw.text(
-        (FIELDS["residence_line_1"]["x"],
-        FIELDS["residence_line_1"]["y"]),
-        residence_line_1,
-        fill="black",
-        font=font_regular
+    st.download_button(
+        label="Download Proposal PDF",
+        data=pdf,
+        file_name="proposal.pdf",
+        mime="application/pdf"
     )
     
-    # Second line
-    draw.text(
-        (FIELDS["residence_line_2"]["x"],
-        FIELDS["residence_line_2"]["y"]),
-        residence_line_2,
-        fill="black",
-        font=font_regular
-    )
 
-    # Total Project Value
-    draw.text(
-        (FIELDS["project_value"]["x"],
-        FIELDS["project_value"]["y"]),
-        project_value_text,
-        fill="black",
-        font=font_bold
-    )
-
-    # Cash Discount
-    draw.text(
-        (FIELDS["cash_discount"]["x"],
-        FIELDS["cash_discount"]["y"]),
-        cash_discount_text,
-        fill="black",
-        font=font_medium
-    )
-
-    # HDM Carve-Out
-    draw.text(
-        (FIELDS["hdm_carveout"]["x"],
-        FIELDS["hdm_carveout"]["y"]),
-        hdm_text,
-        fill="black",
-        font=font_medium
-    )
-
-    # Net Capital Requirement
-    draw.text(
-        (FIELDS["net_capital"]["x"],
-        FIELDS["net_capital"]["y"]),
-        net_text,
-        fill="black",
-        font=font_bold
-    )
-
-    # -------------------------
-    # SAVE TEMP IMAGE
-    # -------------------------
-
-    temp_image = tempfile.NamedTemporaryFile(
-        delete=False,
-        suffix=".png"
-    )
-
-    template.save(temp_image.name)
-
-    # -------------------------
-    # CREATE PDF
-    # -------------------------
-
-    pdf_file = tempfile.NamedTemporaryFile(
-        delete=False,
-        suffix=".pdf"
-    )
-
-    c = canvas.Canvas(
-        pdf_file.name,
-        pagesize=landscape(template.size)
-    )
-
-    c.drawImage(
-        ImageReader(temp_image.name),
-        0,
-        0,
-        width=template.width,
-        height=template.height
-    )
-
-    c.save()
-
-    # -------------------------
-    # DOWNLOAD BUTTON
-    # -------------------------
-
-    with open(pdf_file.name, "rb") as pdf:
-
-        st.download_button(
-            label="Download Proposal PDF",
-            data=pdf,
-            file_name="proposal.pdf",
-            mime="application/pdf"
-        )
-
-    # -------------------------
-    # CLEANUP
-    # -------------------------
-
-    os.unlink(temp_image.name)
-    os.unlink(pdf_file.name)
+    
