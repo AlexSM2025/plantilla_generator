@@ -30,11 +30,6 @@ city = st.text_input(
 )
 
 
-residence_line_1 = f"{last_name} Residence"
-
-residence_line_2 = f"({city})"
-
-
 project_value = st.number_input(
     "Total Project Value",
     min_value=0,
@@ -56,17 +51,15 @@ hdm_carveout = st.number_input(
     step=100
 )
 
-calculated_net = (
+net_capital = (
     project_value
     - cash_discount
     - hdm_carveout
 )
 
-net_capital = st.number_input(
-    "Net Capital Requirement",
-    min_value=0,
-    value=int(calculated_net),
-    step=100
+st.metric(
+    label="Net Capital Requirement",
+    value=f"${net_capital:,.0f}"
 )
 
 # =========================
