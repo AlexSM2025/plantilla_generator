@@ -10,7 +10,11 @@ def img_to_base64(path):
 
 def load_css():
     base_dir = os.path.dirname(__file__)
-    css_path = os.path.join(base_dir, "../../styles.css")
+
+    css_path = os.path.join(base_dir, "styles.css")
+
+    if not os.path.exists(css_path):
+        raise FileNotFoundError(f"CSS not found at: {css_path}")
 
     with open(css_path, "r", encoding="utf-8") as f:
         return f.read()
