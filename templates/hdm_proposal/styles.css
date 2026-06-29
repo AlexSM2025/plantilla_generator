@@ -35,17 +35,11 @@ body {
 .proposal-header{
 
     height:110px;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:14px 40px;
-
+    padding:12px 40px;
     background:white;
-
     border-bottom:2px solid #D8D8D8;
 
 }
