@@ -1,33 +1,25 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
 <body>
 
 <div class="page">
 
-    <!-- Header -->
+    {% include "components/header.html" %}
 
-    <!-- Customer -->
+    <main>
 
-    <!-- Installation -->
+        {% include "components/customer_information.html" %}
 
-    <!-- Financing -->
+        {% include "components/installation_target.html" %}
 
-    <!-- Savings -->
+        {% include "components/financing_options.html" %}
 
-    <!-- Highlights -->
+        {% include "components/savings_banner.html" %}
 
-    <!-- Footer -->
+        {% include "components/financial_highlights.html" %}
+
+    </main>
+
+    {% include "components/footer.html" %}
 
 </div>
 
 </body>
-
-</html>
