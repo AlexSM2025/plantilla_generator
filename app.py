@@ -53,8 +53,8 @@ if proposal_type == "Integrated Backup":
 # FUTURE TEMPLATE
 # =========================
 
- elif proposal_type == "HDM Proposal":
-     html = render_page1({
+elif proposal_type == "HDM Proposal":
+    html = render_page1({
         "customer_name": "",
         "address": "",
     })
