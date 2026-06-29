@@ -1,11 +1,23 @@
 from jinja2 import Environment, FileSystemLoader
 import os
+import base64
 
 
+# =========================
+# CONVERT IMAGE TO BASE64
+# =========================
+def img_to_base64(path):
+    with open(path, "rb") as img:
+        return base64.b64encode(img.read()).decode()
+
+
+# =========================
+# RENDER PAGE 1
+# =========================
 def render_page1(data):
     """
     Renderiza la Página 1 del Proposal HDM.
-    Retorna el HTML listo para mostrarse o convertirlo a PDF.
+    Retorna HTML listo para Streamlit o PDF.
     """
 
     base_dir = os.path.dirname(__file__)
@@ -16,14 +28,32 @@ def render_page1(data):
 
     template = env.get_template("page1.html")
 
+    # =========================
+    # LOGOS (BASE64)
+    # =========================
+    maelo_logo = img_to_base64(
+        os.path.join(base_dir, "../../assets/logos/maelo_logo.png")
+    )
+
+    bright_logo = img_to_base64(
+        os.path.join(base_dir, "../../assets/logos/bright_energy_logo.png")
+    )
+
+    hdm_logo = img_to_base64(
+        os.path.join(base_dir, "../../assets/logos/hdm_logo.png")
+    )
+
+    # =========================
+    # RENDER HTML
+    # =========================
     html = template.render(
 
-        # Logos
-        maelo_logo="assets/logos/maelo_logo.png",
-        bright_logo="assets/logos/bright_energy_logo.png",
-        hdm_logo="assets/logos/hdm_logo.png",
+        # Logos (BASE64 strings)
+        maelo_logo=maelo_logo,
+        bright_logo=bright_logo,
+        hdm_logo=hdm_logo,
 
-        # Variables del formulario
+        # Form data
         **data
     )
 
