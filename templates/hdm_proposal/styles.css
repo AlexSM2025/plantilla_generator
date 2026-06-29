@@ -41,7 +41,6 @@ body {
     padding:10px 40px;
     background:white;
     border-bottom:2px solid #D8D8D8;
-    overflow: visible;
 
 }
 
@@ -51,7 +50,6 @@ body {
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
-    overflow: visible;
 }
 
 /* Maelo */
@@ -60,7 +58,6 @@ body {
     width: 320px;
     height: auto;
     margin-top: 40px;
-    display: block;
 }
 
 /* Powered By */
