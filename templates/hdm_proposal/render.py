@@ -4,11 +4,9 @@ import base64
 
 
 def img_to_base64(path):
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"Logo not found: {path}")
-
     with open(path, "rb") as img:
-        return base64.b64encode(img.read()).decode()
+        encoded = base64.b64encode(img.read()).decode()
+        return f"data:image/png;base64,{encoded}"
 
 
 def render_page1(data):
