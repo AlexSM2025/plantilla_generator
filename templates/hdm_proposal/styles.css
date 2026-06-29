@@ -27,3 +27,123 @@ body {
 
     overflow: hidden;
 }
+
+/* ===========================
+   HEADER
+=========================== */
+
+.proposal-header{
+
+    height:120px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 40px;
+
+    background:white;
+
+    border-bottom:2px solid #D8D8D8;
+
+}
+
+/* LEFT SIDE */
+
+.header-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+/* Maelo */
+
+.maelo-logo{
+
+    width:360px;
+
+    height:auto;
+
+}
+
+/* Powered By */
+
+.powered-row{
+
+    margin-top:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.powered-text{
+
+    font-family:"Barlow";
+
+    font-size:16px;
+
+    color:#111;
+
+}
+
+.bright-logo{
+
+    width:120px;
+
+    height:auto;
+
+}
+
+.wholesale-text{
+
+    font-family:"Barlow";
+
+    font-size:16px;
+
+    color:#0A4EA3;
+
+    font-weight:600;
+
+}
+
+/* Divider */
+
+.header-divider{
+
+    width:2px;
+
+    height:78px;
+
+    background:#CFCFCF;
+
+}
+
+/* Right */
+
+.header-right{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+}
+
+.hdm-logo{
+
+    width:300px;
+
+    height:auto;
+
+}
