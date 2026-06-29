@@ -25,8 +25,7 @@ proposal_type = st.selectbox(
     "Proposal Type",
     [
         "Integrated Backup"
-        # Más adelante:
-        # "HDM Proposal"
+        "HDM Proposal"
     ]
 )
 
