@@ -68,7 +68,7 @@ body {
 
 .powered-row{
 
-    margin-top:1px;
+    margin-top:0px;
     display:flex;
     align-items:center;
     gap:10px;
