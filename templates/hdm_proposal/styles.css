@@ -96,12 +96,10 @@ body {
 /* Divider */
 
 .header-divider{
-
     width:2px;
-
     height:78px;
-
     background:#CFCFCF;
+    margin-left: 25px;
 
 }
 
