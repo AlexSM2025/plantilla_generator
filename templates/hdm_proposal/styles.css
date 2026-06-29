@@ -34,11 +34,11 @@ body {
 
 .proposal-header{
 
-    height:110px;
+    height:115px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:10px 40px;
+    padding:8px 40px;
     background:white;
     border-bottom:2px solid #D8D8D8;
 
@@ -56,7 +56,7 @@ body {
 /* Maelo */
 
 .maelo-logo {
-    width: 310px;
+    width: 308px;
     height: auto;
     margin-top: 38px;
     display: block;
