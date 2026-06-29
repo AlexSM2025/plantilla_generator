@@ -24,7 +24,7 @@ st.title("Proposal Generator")
 proposal_type = st.selectbox(
     "Proposal Type",
     [
-        "Integrated Backup"
+        "Integrated Backup",
         "HDM Proposal"
     ]
 )
