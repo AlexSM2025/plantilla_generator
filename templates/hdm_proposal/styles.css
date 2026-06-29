@@ -64,12 +64,9 @@ body {
 
 /* Maelo */
 
-.maelo-logo{
-
-    width:360px;
-
-    height:auto;
-
+.maelo-logo {
+    width: 220px;
+    height: auto;
 }
 
 /* Powered By */
@@ -77,43 +74,28 @@ body {
 .powered-row{
 
     margin-top:12px;
-
     display:flex;
-
     align-items:center;
-
     gap:10px;
 
 }
 
 .powered-text{
-
     font-family:"Barlow";
-
     font-size:16px;
-
     color:#111;
-
 }
 
-.bright-logo{
-
-    width:120px;
-
-    height:auto;
-
+.bright-logo {
+    width: 90px;
+    height: auto;
 }
 
 .wholesale-text{
-
     font-family:"Barlow";
-
     font-size:16px;
-
     color:#0A4EA3;
-
     font-weight:600;
-
 }
 
 /* Divider */
@@ -140,10 +122,7 @@ body {
 
 }
 
-.hdm-logo{
-
-    width:300px;
-
-    height:auto;
-
+.hdm-logo {
+    width: 180px;
+    height: auto;
 }
