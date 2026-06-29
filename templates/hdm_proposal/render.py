@@ -29,7 +29,7 @@ def render_page1(data):
     )
 
     maelo_logo = img_to_base64(os.path.join(assets_dir, "maelo_logo.png"))
-    bright_logo = img_to_base64(os.path.join(assets_dir, "bright_energy_logo.png"))
+    bright_logo = img_to_base64(os.path.join(assets_dir, "bright_logo.png"))
     hdm_logo = img_to_base64(os.path.join(assets_dir, "hdm_logo.png"))
 
     html = template.render(
