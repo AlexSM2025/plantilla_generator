@@ -50,6 +50,8 @@ body {
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
+    overflow: visible;
+    padding-top: 12px;
 }
 
 /* Maelo */
@@ -57,7 +59,8 @@ body {
 .maelo-logo {
     width: 320px;
     height: auto;
-    margin-top: 40px;
+    margin-top: 0px;
+    display: block;
 }
 
 /* Powered By */
