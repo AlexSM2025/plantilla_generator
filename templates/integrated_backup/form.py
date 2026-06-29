@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-def get_form_data():
+def integrated_backup_form():
 
     last_name = st.text_input(
         "Last Name",
