@@ -1,1 +1,29 @@
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    background: #f5f7fb;
+}
+
+.page {
+    width: 297mm;
+    height: 210mm;
+
+    display: flex;
+    flex-direction: column;
+
+    background: white;
+
+    margin: auto;
+
+    overflow: hidden;
+}
