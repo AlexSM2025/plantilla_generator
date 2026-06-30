@@ -45,6 +45,10 @@ def render_page1(data):
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "images", "hero_banner.png")
     )
 
+    location_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "location.png")
+    )
+
     html = template.render(
 
         css=css,
@@ -54,6 +58,8 @@ def render_page1(data):
         hdm_logo=hdm_logo,
 
         hero_image=hero_image,
+
+        location_icon=location_icon
 
         **data
     )
