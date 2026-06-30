@@ -57,10 +57,7 @@ elif proposal_type == "HDM Proposal":
 
     data = hdm_proposal_form()
 
-    html = render_page1({
-        "customer_name": "",
-        "address": "",
-    })
+    html = render_page1(data)
     
     st.components.v1.html(
         html,
