@@ -59,7 +59,7 @@ def render_page1(data):
 
         hero_image=hero_image,
 
-        location_icon=location_icon
+        location_icon=location_icon,
 
         **data
     )
