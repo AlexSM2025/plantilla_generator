@@ -5,6 +5,7 @@ import streamlit as st
 from templates.integrated_backup.form import integrated_backup_form
 from templates.integrated_backup.render import render_integrated_backup
 from templates.hdm_proposal.render import render_page1
+from templates.hdm_proposal.form import hdm_proposal_form
 
 # =========================
 # PAGE CONFIG
@@ -53,6 +54,9 @@ if proposal_type == "Integrated Backup":
 # =========================
 
 elif proposal_type == "HDM Proposal":
+
+    data = hdm_proposal_form()
+
     html = render_page1({
         "customer_name": "",
         "address": "",
