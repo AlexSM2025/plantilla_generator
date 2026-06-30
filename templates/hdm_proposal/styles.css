@@ -210,7 +210,7 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -60px;   /* 👈 MÁS A LA IZQUIERDA (ajustable) */
+    left: -40px;   /* 👈 MÁS A LA IZQUIERDA (ajustable) */
     width: 80px;
     height: 100%;
     background: #ffffff;  /* 👈 BLANCO */
