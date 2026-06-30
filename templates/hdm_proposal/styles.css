@@ -199,14 +199,21 @@ body {
 }
 
 /* DIAGONAL FIX (REPLACE clip-path + skew) */
+.hero-right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* diagonal blanca */
 .hero-right::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -80px;
-    width: 160px;
+    left: -60px;   /* 👈 MÁS A LA IZQUIERDA (ajustable) */
+    width: 80px;
     height: 100%;
-    background: #001136;
+    background: #ffffff;  /* 👈 BLANCO */
     transform: skew(-18deg);
     z-index: 2;
 }
