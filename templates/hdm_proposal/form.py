@@ -39,12 +39,21 @@ def hdm_proposal_form():
             placeholder="92101"
         )
 
+
+    st.subheader("Installation")
+
+    installation_target = st.text_input(
+        "Installation Target",
+        placeholder="SUMMER 2026"
+    )
+
     data = {
         "customer_last_name": customer_last_name,
         "customer_address": customer_address,
         "customer_city": customer_city,
         "customer_state": customer_state,
         "customer_zip": customer_zip,
+        "installation_target": installation_target,
     }
 
     return data
