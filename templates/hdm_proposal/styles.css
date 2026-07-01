@@ -362,3 +362,58 @@ body {
 
 }
 
+/*================ WHOLE-HOME BACKUP ================*/
+
+.backup-card{
+
+    width:31%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:22px 28px;
+
+    background:white;
+
+}
+
+.backup-icon img{
+
+    width:46px;
+    height:auto;
+
+}
+
+.backup-text{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.backup-title{
+
+    font-family:"Barlow", sans-serif;
+    font-size:13px;
+    font-weight:700;
+    color:#001136;
+
+    letter-spacing:.5px;
+
+    margin-bottom:8px;
+
+}
+
+.backup-description{
+
+    font-family:"Barlow", sans-serif;
+    font-size:14px;
+    font-weight:500;
+    color:#6A6A6A;
+
+    line-height:1.35;
+
+}
