@@ -53,6 +53,10 @@ def render_page1(data):
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "calendar.png")
     )
 
+    backup_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "backup.png")
+    )
+
     html = template.render(
 
         css=css,
@@ -65,6 +69,7 @@ def render_page1(data):
 
         location_icon=location_icon,
         calendar_icon=calendar_icon,
+        backup_icon=backup_icon,
 
         **data
     )
