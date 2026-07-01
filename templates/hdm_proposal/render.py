@@ -56,6 +56,7 @@ def render_page1(data):
     backup_icon = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "backup.png")
     )
+    
 
     html = template.render(
 
