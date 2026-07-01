@@ -47,6 +47,12 @@ def hdm_proposal_form():
         placeholder="SUMMER 2026"
     )
 
+    backup_description = st.text_area(
+        "Whole-Home Backup Description",
+        value="With Managed Energy Consumption During Extended Outages",
+        height=80
+    )
+
     data = {
         "customer_last_name": customer_last_name,
         "customer_address": customer_address,
@@ -54,6 +60,7 @@ def hdm_proposal_form():
         "customer_state": customer_state,
         "customer_zip": customer_zip,
         "installation_target": installation_target,
+        "backup_description": backup_description,
     }
 
     return data
