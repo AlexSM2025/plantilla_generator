@@ -5,7 +5,7 @@ def hdm_proposal_form():
     """
     Renderiza el formulario de la propuesta HDM
     y devuelve un diccionario con toda la información.
-    """
+    """ 
 
     st.subheader("Customer Information")
 
