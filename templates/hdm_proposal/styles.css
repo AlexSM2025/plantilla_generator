@@ -417,3 +417,337 @@ body {
     line-height:1.35;
 
 }
+
+
+/* ===================================================
+   FINANCIAL HIGHLIGHTS
+====================================================== */
+
+.financial-highlights {
+    padding: 22px 34px 0 34px;
+}
+
+.financial-highlights-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1fr 1.18fr 1fr;
+    gap: 16px;
+    align-items: stretch;
+}
+
+/* Generic card */
+.fh-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 330px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.fh-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 22px 18px 22px;
+}
+
+/* =========================
+   COLUMN 1 - COST OF WAITING
+========================= */
+
+.fh-card-waiting {
+    background: #ffffff;
+    border: 1px solid #e6e8ef;
+    min-height: 330px;
+}
+
+.fh-card-body-waiting {
+    align-items: flex-start;
+    padding-bottom: 14px;
+}
+
+.fh-waiting-title {
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    color: #1c2740;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.fh-waiting-subtitle {
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #6f7787;
+    margin-bottom: 22px;
+}
+
+.fh-waiting-value {
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 800;
+    color: #d73c3c;
+    margin-bottom: 14px;
+}
+
+.fh-waiting-description {
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #1c2740;
+}
+
+.fh-waiting-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0 16px 16px 16px;
+    padding: 14px 14px;
+    border: 1px solid #f2b5b5;
+    background: #fff4f4;
+    border-radius: 14px;
+}
+
+.fh-waiting-alert-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    background: #d73c3c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.fh-waiting-alert-text {
+    font-size: 12px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #7c2d2d;
+}
+
+/* =========================
+   SHARED OPTION CARDS
+========================= */
+
+.fh-card-option {
+    border: 1px solid #e6e8ef;
+    position: relative;
+}
+
+.fh-option-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    min-height: 28px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin: 18px 0 0 18px;
+}
+
+.fh-option-badge-gray {
+    background: #e7eaef;
+    color: #475467;
+}
+
+.fh-option-badge-light {
+    background: #eef1f6;
+    color: #475467;
+    margin: 0;
+}
+
+.fh-option-badge-blue {
+    background: #dbe9ff;
+    color: #0d5bd7;
+}
+
+.fh-option-title {
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #1c2740;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.fh-option-subtitle {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #6f7787;
+    margin-bottom: 18px;
+}
+
+.fh-divider {
+    width: 100%;
+    border-top: 2px dotted #d8dde6;
+    margin-bottom: 22px;
+}
+
+.fh-option-label {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #667085;
+    margin-bottom: 10px;
+}
+
+.fh-option-value {
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.fh-option-value-dark {
+    color: #111827;
+    margin-top: 4px;
+}
+
+.fh-option-value-orange {
+    color: #f28c28;
+}
+
+.fh-option-value-blue {
+    color: #0d5bd7;
+}
+
+.fh-option-note {
+    font-size: 13px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #667085;
+}
+
+/* =========================
+   COLUMN 2 - STATUS QUO
+========================= */
+
+.fh-card-status-quo .fh-card-body {
+    padding-top: 18px;
+}
+
+/* =========================
+   COLUMN 3 - RECOMMENDED
+========================= */
+
+.fh-card-recommended {
+    border: 2px solid #f28c28;
+    box-shadow: 0 10px 24px rgba(242, 140, 40, 0.16);
+}
+
+.fh-card-recommended .fh-card-body {
+    padding-top: 18px;
+}
+
+.fh-top-badges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 18px 0 18px;
+}
+
+.fh-recommended-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #f28c28;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* =========================
+   COLUMN 4 - DIRECT OWNERSHIP
+========================= */
+
+.fh-card-direct .fh-card-body {
+    padding-top: 18px;
+}
+
+/* =========================
+   CARD FOOTERS
+========================= */
+
+.fh-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.fh-card-footer-dark {
+    background: #2b3345;
+    color: #ffffff;
+}
+
+.fh-card-footer-orange {
+    background: #f28c28;
+    color: #ffffff;
+}
+
+.fh-card-footer-blue {
+    background: #0d5bd7;
+    color: #ffffff;
+}
+
+.fh-footer-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.fh-card-footer-dark .fh-footer-icon {
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+}
+
+.fh-footer-icon-white {
+    background: #ffffff;
+}
+
+.fh-card-footer-orange .fh-footer-icon-white {
+    color: #f28c28;
+}
+
+.fh-card-footer-blue .fh-footer-icon-white {
+    color: #0d5bd7;
+}
+
+.fh-footer-text {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
