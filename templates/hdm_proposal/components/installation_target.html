@@ -1,8 +1,9 @@
 <section class="installation-financials">
     <div class="installation-financials-grid">
 
-        <div class="if-card if-card-waiting">
-            <div class="if-card-body if-card-body-waiting">
+        <!-- COLUMN 1: COST OF WAITING -->
+        <div class="if-waiting-block">
+            <div class="if-waiting-top">
                 <h3 class="if-waiting-title">THE COST OF WAITING</h3>
                 <p class="if-waiting-subtitle">Continuing With PG&E</p>
 
@@ -16,8 +17,100 @@
 
             <div class="if-waiting-alert">
                 <div class="if-waiting-alert-icon">✕</div>
-                <p class="if-waiting-alert-text">
-                    {{ cost_of_waiting_note }}
-                </p>
+
+                <div class="if-waiting-alert-content">
+                    <p class="if-waiting-alert-main">
+                        PG&E rates have consistently increased faster than inflation.
+                        Many years exceeding 10%.
+                    </p>
+
+                    <p class="if-waiting-alert-sub">
+                        Assumed 6% annual utility rate increase. *
+                    </p>
+
+                    <p class="if-waiting-alert-footnote">
+                        * Source: See pge.com/rates for historical rate information.
+                    </p>
+                </div>
             </div>
         </div>
+
+        <!-- COLUMN 2: STATUS QUO -->
+        <div class="if-option-card if-option-card-status">
+            <div class="if-option-badge if-option-badge-gray">OPTION 3</div>
+
+            <div class="if-option-card-inner">
+                <div class="if-option-content">
+                    <h3 class="if-option-title">STATUS QUO</h3>
+                    <p class="if-option-subtitle">Continue Paying PG&E</p>
+
+                    <div class="if-divider"></div>
+
+                    <div class="if-option-value if-option-value-gray">
+                        {{ status_quo_value }}
+                    </div>
+                </div>
+
+                <div class="if-option-footer if-option-footer-dark">
+                    <div class="if-option-footer-icon">✕</div>
+                    <span class="if-option-footer-text">NOT RECOMMENDED</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 3: RECOMMENDED -->
+        <div class="if-option-card if-option-card-recommended">
+            <div class="if-recommended-pill">★ RECOMMENDED ★</div>
+
+            <div class="if-option-card-inner if-option-card-inner-recommended">
+                <div class="if-option-badge if-option-badge-orange">OPTION 2</div>
+
+                <div class="if-option-content">
+                    <h3 class="if-option-title">HDM DEFERRED<br>OWNERSHIP</h3>
+                    <p class="if-option-subtitle">Beginning Year 6</p>
+
+                    <div class="if-divider if-divider-orange"></div>
+
+                    <p class="if-option-label">Effective Investment</p>
+
+                    <div class="if-option-value if-option-value-orange">
+                        {{ deferred_ownership_value }}
+                    </div>
+
+                    <p class="if-option-note">After Available Incentives</p>
+                </div>
+
+                <div class="if-option-footer if-option-footer-orange">
+                    <div class="if-option-footer-icon if-option-footer-icon-white">✓</div>
+                    <span class="if-option-footer-text">BEST VALUE - LOWEST INVESTMENT</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 4: DIRECT OWNERSHIP -->
+        <div class="if-option-card if-option-card-direct">
+            <div class="if-option-badge if-option-badge-blue">OPTION 1</div>
+
+            <div class="if-option-card-inner">
+                <div class="if-option-content">
+                    <h3 class="if-option-title">DIRECT OWNERSHIP</h3>
+                    <p class="if-option-subtitle">Day 1</p>
+
+                    <div class="if-divider"></div>
+
+                    <p class="if-option-label">Effective Investment</p>
+
+                    <div class="if-option-value if-option-value-blue">
+                        {{ direct_ownership_value }}
+                    </div>
+                </div>
+
+                <div class="if-option-footer if-option-footer-blue">
+                    <div class="if-option-footer-icon if-option-footer-icon-white">↗</div>
+                    <span class="if-option-footer-text">HIGHER UPFRONT INVESTMENT</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
