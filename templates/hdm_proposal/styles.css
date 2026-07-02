@@ -122,7 +122,7 @@ body {
 .hero-banner {
     position: relative;
     display: flex;
-    height: 205px;
+    height: 185px;
     background: #001136;
     overflow: hidden;
     font-family: "Barlow", sans-serif;
@@ -131,7 +131,7 @@ body {
 /* LEFT SIDE */
 .hero-left {
     flex: 1;
-    padding: 24px 24px 22px 24px;
+    padding: 20px 24px 18px 24px;
     color: white;
     display: flex;
     flex-direction: column;
