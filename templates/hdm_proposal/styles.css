@@ -419,335 +419,377 @@ body {
 }
 
 
-/* =========================
+/* ==========================================
    INSTALLATION FINANCIALS
-========================= */
+========================================== */
 
 .installation-financials {
-    padding: 22px 34px 0 34px;
+    padding: 18px 26px 0 26px;
 }
 
 .installation-financials-grid {
     display: grid;
-    grid-template-columns: 0.95fr 1fr 1.18fr 1fr;
+    grid-template-columns: 0.95fr 1fr 1.14fr 1fr;
     gap: 16px;
     align-items: stretch;
 }
 
-/* Generic card */
-.if-card {
+/* ==========================================
+   COLUMN 1 - COST OF WAITING
+========================================== */
+
+.if-waiting-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 330px;
-    border-radius: 18px;
-    overflow: hidden;
-    background: #ffffff;
+    min-height: 390px;
+    padding: 6px 4px 0 4px;
 }
 
-.if-card-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 22px 22px 18px 22px;
-}
-
-/* =========================
-   COLUMN 1 - COST OF WAITING
-========================= */
-
-.if-card-waiting {
-    background: #ffffff;
-    border: 1px solid #e6e8ef;
-    min-height: 330px;
-}
-
-.if-card-body-waiting {
-    align-items: flex-start;
-    padding-bottom: 14px;
+.if-waiting-top {
+    text-align: center;
+    padding: 0 6px;
 }
 
 .if-waiting-title {
-    font-size: 15px;
-    line-height: 1.1;
+    font-size: 19px;
+    line-height: 1.05;
     font-weight: 800;
-    letter-spacing: 0.4px;
-    color: #1c2740;
-    margin-bottom: 10px;
+    color: #b11212;
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .if-waiting-subtitle {
-    font-size: 14px;
-    line-height: 1.25;
-    font-weight: 500;
-    color: #6f7787;
-    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1b1b1b;
+    margin-bottom: 16px;
 }
 
 .if-waiting-value {
-    font-size: 42px;
-    line-height: 1;
+    font-size: 58px;
+    line-height: 0.95;
     font-weight: 800;
-    color: #d73c3c;
-    margin-bottom: 14px;
+    color: #b11212;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
 }
 
 .if-waiting-description {
-    font-size: 14px;
-    line-height: 1.35;
+    font-size: 17px;
+    line-height: 1.25;
     font-weight: 600;
-    color: #1c2740;
+    color: #1b1b1b;
 }
 
+/* warning box */
 .if-waiting-alert {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    margin: 0 16px 16px 16px;
-    padding: 14px 14px;
-    border: 1px solid #f2b5b5;
+    gap: 14px;
     background: #fff4f4;
+    border: 2px solid #e8c9c9;
     border-radius: 14px;
+    padding: 16px 16px 14px 16px;
+    margin-top: 18px;
 }
 
 .if-waiting-alert-icon {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
     border-radius: 50%;
-    background: #d73c3c;
+    background: #c31818;
     color: #ffffff;
-    font-size: 13px;
-    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 2px;
 }
 
-.if-waiting-alert-text {
-    font-size: 12px;
-    line-height: 1.45;
-    font-weight: 500;
-    color: #7c2d2d;
+.if-waiting-alert-content {
+    flex: 1;
 }
 
-/* =========================
-   SHARED OPTION CARDS
-========================= */
+.if-waiting-alert-main {
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
 
-.if-card-option {
-    border: 1px solid #e6e8ef;
+.if-waiting-alert-sub {
+    font-size: 13px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+.if-waiting-alert-footnote {
+    font-size: 11px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+/* ==========================================
+   OPTION CARDS (COLUMNS 2, 3, 4)
+========================================== */
+
+.if-option-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
 }
 
+.if-option-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 390px;
+    background: #ffffff;
+    border: 2px solid #e3e7ed;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* top badges */
 .if-option-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 38px;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    align-self: flex-start;
-    min-height: 28px;
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    margin: 18px 0 0 18px;
+    white-space: nowrap;
+    z-index: 3;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .if-option-badge-gray {
-    background: #e7eaef;
-    color: #475467;
+    background: #5a5a5a;
+    color: #ffffff;
 }
 
-.if-option-badge-light {
-    background: #eef1f6;
-    color: #475467;
-    margin: 0;
+.if-option-badge-orange {
+    position: static;
+    transform: none;
+    min-height: 34px;
+    padding: 7px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #f28c00;
+    color: #ffffff;
+    margin: 18px auto 10px auto;
+    box-shadow: none;
 }
 
 .if-option-badge-blue {
-    background: #dbe9ff;
-    color: #0d5bd7;
+    background: #062b8c;
+    color: #ffffff;
+}
+
+/* card content */
+.if-option-content {
+    flex: 1;
+    text-align: center;
+    padding: 44px 20px 18px 20px;
 }
 
 .if-option-title {
-    font-size: 18px;
-    line-height: 1.15;
+    font-size: 25px;
+    line-height: 1.05;
     font-weight: 800;
-    color: #1c2740;
-    margin-bottom: 8px;
+    color: #0f172a;
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .if-option-subtitle {
-    font-size: 14px;
-    line-height: 1.3;
-    font-weight: 500;
-    color: #6f7787;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111111;
     margin-bottom: 18px;
 }
 
 .if-divider {
     width: 100%;
-    border-top: 2px dotted #d8dde6;
-    margin-bottom: 22px;
+    border-top: 3px dotted #cfcfcf;
+    margin: 0 0 22px 0;
+}
+
+.if-divider-orange {
+    border-top-color: #efc08b;
 }
 
 .if-option-label {
-    font-size: 14px;
-    line-height: 1.3;
-    font-weight: 600;
-    color: #667085;
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #1f1f1f;
     margin-bottom: 10px;
 }
 
 .if-option-value {
-    font-size: 42px;
-    line-height: 1;
+    font-size: 60px;
+    line-height: 0.95;
     font-weight: 800;
-    margin-bottom: 10px;
+    letter-spacing: -1px;
 }
 
-.if-option-value-dark {
-    color: #111827;
-    margin-top: 4px;
+.if-option-value-gray {
+    color: #5a5a5a;
+    margin-top: 28px;
 }
 
 .if-option-value-orange {
-    color: #f28c28;
+    color: #f28c00;
+    margin-bottom: 12px;
 }
 
 .if-option-value-blue {
-    color: #0d5bd7;
+    color: #062b8c;
+    margin-top: 12px;
 }
 
 .if-option-note {
-    font-size: 13px;
-    line-height: 1.3;
-    font-weight: 500;
-    color: #667085;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1f1f1f;
 }
 
-/* =========================
-   COLUMN 2 - STATUS QUO
-========================= */
+/* ==========================================
+   STATUS QUO
+========================================== */
 
-.if-card-status-quo .if-card-body {
-    padding-top: 18px;
+.if-option-card-status .if-option-content {
+    padding-top: 52px;
 }
 
-/* =========================
-   COLUMN 3 - RECOMMENDED
-========================= */
+/* ==========================================
+   RECOMMENDED CARD
+========================================== */
 
-.if-card-recommended {
-    border: 2px solid #f28c28;
-    box-shadow: 0 10px 24px rgba(242, 140, 40, 0.16);
+.if-option-card-recommended {
+    padding-top: 0;
 }
 
-.if-card-recommended .if-card-body {
-    padding-top: 18px;
-}
-
-.if-top-badges {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 18px 18px 0 18px;
-}
-
-.if-recommended-badge {
+.if-recommended-pill {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f28c00;
+    color: #ffffff;
+    min-height: 34px;
+    padding: 7px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 30px;
-    padding: 7px 14px;
-    border-radius: 999px;
-    background: #f28c28;
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
     white-space: nowrap;
+    z-index: 4;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-/* =========================
-   COLUMN 4 - DIRECT OWNERSHIP
-========================= */
-
-.if-card-direct .if-card-body {
-    padding-top: 18px;
+.if-option-card-inner-recommended {
+    border: 2px solid #f28c00;
+    padding-top: 24px;
 }
 
-/* =========================
+.if-option-card-recommended .if-option-content {
+    padding-top: 8px;
+}
+
+/* ==========================================
+   DIRECT OWNERSHIP
+========================================== */
+
+.if-option-card-direct .if-option-content {
+    padding-top: 52px;
+}
+
+/* ==========================================
    CARD FOOTERS
-========================= */
+========================================== */
 
-.if-card-footer {
+.if-option-footer {
+    min-height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    min-height: 56px;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-align: center;
 }
 
-.if-card-footer-dark {
-    background: #2b3345;
+.if-option-footer-dark {
+    background: #4b4b4b;
     color: #ffffff;
 }
 
-.if-card-footer-orange {
-    background: #f28c28;
+.if-option-footer-orange {
+    background: #f28c00;
     color: #ffffff;
 }
 
-.if-card-footer-blue {
-    background: #0d5bd7;
+.if-option-footer-blue {
+    background: #062b8c;
     color: #ffffff;
 }
 
-.if-footer-icon {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
+.if-option-footer-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
+    line-height: 1;
 }
 
-.if-card-footer-dark .if-footer-icon {
-    background: rgba(255, 255, 255, 0.16);
-    color: #ffffff;
-}
-
-.if-footer-icon-white {
+.if-option-footer-icon-white {
     background: #ffffff;
 }
 
-.if-card-footer-orange .if-footer-icon-white {
-    color: #f28c28;
+.if-option-footer-orange .if-option-footer-icon-white {
+    color: #f28c00;
 }
 
-.if-card-footer-blue .if-footer-icon-white {
-    color: #0d5bd7;
+.if-option-footer-blue .if-option-footer-icon-white {
+    color: #062b8c;
 }
 
-.if-footer-text {
-    font-size: 12px;
-    line-height: 1.2;
+.if-option-footer-text {
+    font-size: 13px;
+    line-height: 1.1;
     font-weight: 800;
-    letter-spacing: 0.3px;
     text-transform: uppercase;
+    letter-spacing: 0.2px;
 }
