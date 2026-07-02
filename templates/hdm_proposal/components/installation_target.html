@@ -1,1 +1,23 @@
+<section class="installation-financials">
+    <div class="installation-financials-grid">
 
+        <div class="if-card if-card-waiting">
+            <div class="if-card-body if-card-body-waiting">
+                <h3 class="if-waiting-title">THE COST OF WAITING</h3>
+                <p class="if-waiting-subtitle">Continuing With PG&E</p>
+
+                <div class="if-waiting-value">{{ cost_of_waiting_value }}</div>
+
+                <p class="if-waiting-description">
+                    Projected Utility Expense<br>
+                    Over 25 Years
+                </p>
+            </div>
+
+            <div class="if-waiting-alert">
+                <div class="if-waiting-alert-icon">✕</div>
+                <p class="if-waiting-alert-text">
+                    {{ cost_of_waiting_note }}
+                </p>
+            </div>
+        </div>
