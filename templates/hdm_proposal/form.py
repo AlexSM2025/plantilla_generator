@@ -53,6 +53,34 @@ def hdm_proposal_form():
         height=80
     )
 
+    st.subheader("Installation Investment")
+
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+
+    with col1:
+        cost_of_waiting_value = st.text_input(
+            "Cost of Waiting",
+            placeholder="798,600"
+        )
+
+    with col2:
+        status_quo_value = st.text_input(
+            "Status Quo Value",
+            placeholder="798,600"
+        )
+
+    with col3:
+        deferred_ownership_value = st.text_input(
+            "Deferred Ownership",
+            placeholder="72,863"
+        )
+
+    with col4:
+        direct_ownership_value = st.text_input(
+            "Direct Ownership",
+            placeholder="103,959"
+        ) 
+
     data = {
         "customer_last_name": customer_last_name,
         "customer_address": customer_address,
@@ -61,6 +89,10 @@ def hdm_proposal_form():
         "customer_zip": customer_zip,
         "installation_target": installation_target,
         "backup_description": backup_description,
+        "cost_of_waiting_value": cost_of_waiting_value,
+        "status_quo_value": status_quo_value,
+        "deferred_ownership_value": deferred_ownership_value,
+        "direct_ownership_value": direct_ownership_value,
     }
 
     return data
