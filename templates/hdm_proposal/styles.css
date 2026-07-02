@@ -1,5 +1,5 @@
 @page {
-    size: A4 landscape;
+    size: A4 portrait;
     margin: 0;
 }
 
@@ -15,14 +15,13 @@ body {
 }
 
 .page {
-    width: 297mm;
-    height: 210mm;
+    width: 210mm;
+    min-height: 297mm;
 
     display: flex;
     flex-direction: column;
 
     background: white;
-
     margin: auto;
 
     overflow: hidden;
