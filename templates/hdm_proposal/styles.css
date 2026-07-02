@@ -98,7 +98,7 @@ body {
     width:2px;
     height:60px;
     background:#CFCFCF;
-    margin: 20 18px;
+    margin: 0 18px;
     flex-shrink: 0;
 
 }
@@ -122,7 +122,7 @@ body {
 .hero-banner {
     position: relative;
     display: flex;
-    height: 260px;
+    height: 205px;
     background: #001136;
     overflow: hidden;
     font-family: "Barlow", sans-serif;
@@ -131,7 +131,7 @@ body {
 /* LEFT SIDE */
 .hero-left {
     flex: 1;
-    padding: 30px;
+    padding: 24px 24px 22px 24px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -143,7 +143,7 @@ body {
 /* TITLES */
 .hero-title .line-1,
 .hero-title .line-2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.1;
     font-family: "Barlow", sans-serif;
@@ -155,11 +155,11 @@ body {
 
 /* SUBTITLE (orange line) */
 .hero-subtitle {
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 8px;
+    font-size: 12px;
     color: #de9a09;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     font-family: "Barlow", sans-serif;
 }
 
@@ -168,7 +168,7 @@ body {
     width: 60%;
     height: 1px;
     background: white;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
 /* FOOTER LINE */
