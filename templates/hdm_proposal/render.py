@@ -57,23 +57,23 @@ def render_page1(data):
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "backup.png")
     )
 
-    piggy-bank-icon = img_to_base64(
+    piggy_bank_icon = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "piggy-bank.png")
     )
     
-    shield-icon = img_to_base64(
+    shield_icon = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "shield.png")
     )
     
-    home-energy-icon = img_to_base64(
+    home_energy_icon = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "home-energy.png")
     )
     
-    growth-icon = img_to_base64(
+    growth_icon = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "growth.png")
     )
     
-    leaf-icon = img_to_base64(
+    leaf_icon = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "leaf.png")
     )
 
@@ -91,11 +91,11 @@ def render_page1(data):
         calendar_icon=calendar_icon,
         backup_icon=backup_icon,
 
-        piggy-bank-icon = piggy-bank-icon,
-        shield-icon = shield-icon,
-        home-energy-icon = home-energy-icon,
-        growth-icon = growth-icon,
-        leaf-icon = leaf-icon,
+        piggy_bank_icon=piggy_bank_icon,
+        shield_icon=shield_icon,
+        home_energy_icon=home_energy_icon,
+        growth_icon=growth_icon,
+        leaf_icon=leaf_icon,
 
         **data
     )
