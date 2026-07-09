@@ -896,3 +896,416 @@ body {
 .savings-col-benefit:nth-of-type(11) .savings-benefit-text {
     text-align: center;
 }
+
+
+/* =========================================================
+   FINANCIAL HIGHLIGHTS SECTION
+   ========================================================= */
+
+.financial-highlights-section {
+    width: 100%;
+    margin-top: 14px;
+}
+
+/* =========================================================
+   TOP GRID
+   ========================================================= */
+
+.financial-highlights-top {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr 1fr;
+    gap: 14px;
+    align-items: stretch;
+}
+
+/* shared card */
+.fh-card {
+    background: #edf5ef;
+    border-radius: 18px;
+    padding: 18px 18px 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 355px;
+    box-sizing: border-box;
+}
+
+.fh-card-header {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    color: #0b2747;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* =========================================================
+   COLUMN 1 — PLATFORM CARD
+   ========================================================= */
+
+.fh-platform-card {
+    justify-content: space-between;
+}
+
+.fh-platform-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fh-platform-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.fh-platform-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #d9efe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh-platform-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.fh-platform-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 2px;
+}
+
+.fh-platform-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0b2747;
+}
+
+.fh-platform-subtext {
+    font-size: 11px;
+    line-height: 1.35;
+    color: #5b6c78;
+}
+
+/* bottom note inside left card */
+.fh-platform-note {
+    margin-top: 16px;
+    background: #d7e7f8;
+    border-radius: 14px;
+    padding: 14px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.fh-platform-note-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh-platform-note-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.fh-platform-note-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fh-platform-note-title {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #0b2747;
+}
+
+.fh-platform-note-subtext {
+    font-size: 10px;
+    line-height: 1.35;
+    color: #4f6170;
+}
+
+/* =========================================================
+   COLUMN 2 — OFFSET CARD
+   ========================================================= */
+
+.fh-offset-card {
+    justify-content: flex-start;
+}
+
+.fh-offset-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2px;
+}
+
+.fh-offset-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+}
+
+.fh-offset-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #d9efe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh-offset-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.fh-offset-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fh-offset-label {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #0b2747;
+    text-transform: uppercase;
+}
+
+.fh-offset-value {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    color: #20a55a;
+}
+
+.fh-offset-divider {
+    height: 1px;
+    background: rgba(11, 39, 71, 0.12);
+    width: 100%;
+}
+
+/* =========================================================
+   COLUMN 3 — FINANCIAL HIGHLIGHTS CARD
+   ========================================================= */
+
+.fh-highlights-card {
+    justify-content: flex-start;
+}
+
+.fh-highlight-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2px;
+}
+
+.fh-highlight-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+}
+
+.fh-highlight-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #d9efe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh-highlight-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.fh-highlight-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.fh-highlight-label {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #0b2747;
+    text-transform: uppercase;
+}
+
+.fh-highlight-value {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    color: #20a55a;
+}
+
+.fh-highlight-subtext {
+    font-size: 10px;
+    line-height: 1.35;
+    color: #5b6c78;
+}
+
+.fh-highlight-divider {
+    height: 1px;
+    background: rgba(11, 39, 71, 0.12);
+    width: 100%;
+}
+
+/* =========================================================
+   BOTTOM RECOMMENDATION BANNER
+   ========================================================= */
+
+.fh-recommendation-banner {
+    margin-top: 14px;
+    background: #f5a623;
+    border-radius: 18px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 0.95fr 2.05fr;
+    align-items: stretch;
+}
+
+/* left orange block */
+.fh-recommendation-left {
+    background: #f5a623;
+    padding: 18px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.fh-recommendation-trophy {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh-recommendation-trophy img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.fh-recommendation-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fh-recommendation-label {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.fh-recommendation-title {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.8px;
+    color: #ffffff;
+}
+
+.fh-recommendation-subtext {
+    font-size: 11px;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 250px;
+}
+
+/* right bullets block */
+.fh-recommendation-right {
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    background: #f5a623;
+}
+
+.fh-recommendation-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 10px;
+}
+
+.fh-recommendation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.fh-recommendation-check {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.fh-recommendation-check img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.fh-recommendation-text {
+    font-size: 11px;
+    line-height: 1.35;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* =========================================================
+   OPTIONAL MICRO TWEAKS
+   ========================================================= */
+
+/* slightly tighter if needed for PDF */
+.fh-offset-row:first-child,
+.fh-highlight-row:first-child {
+    padding-top: 10px;
+}
