@@ -741,8 +741,8 @@ body {
     background: #08244d;
     border-radius: 18px;
     overflow: hidden;
-    min-height: 88px;
-    margin-top: 10px;
+    min-height: 80px;
+    margin-top: 8px;
     padding: 0 6px;
 }
 
@@ -831,7 +831,7 @@ body {
 }
 
 .savings-main-label {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.8px;
@@ -841,7 +841,7 @@ body {
 }
 
 .savings-main-value {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -1px;
