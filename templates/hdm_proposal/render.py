@@ -77,6 +77,54 @@ def render_page1(data):
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "leaf.png")
     )
 
+    # =========================
+    # FINANCIAL HIGHLIGHTS ICONS
+    # =========================
+    solar_panel_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "solar_panel_icon.png")
+    )
+    
+    battery_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "battery_icon.png")
+    )
+    
+    production_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "production_icon.png")
+    )
+    
+    whole_home_backup_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "whole_home_backup_icon.png")
+    )
+    
+    roof_mount_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "roof_mount_icon.png")
+    )
+    
+    scope_document_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "scope_document_icon.png")
+    )
+    
+    payback_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "payback_icon.png")
+    )
+    
+    roi_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "roi_icon.png")
+    )
+    
+    savings_dollar_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "savings_dollar_icon.png")
+    )
+    
+    trophy_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "trophy_icon.png")
+    )
+    
+    check_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "check_icon.png")
+    )
+
+
     html = template.render(
 
         css=css,
@@ -96,6 +144,20 @@ def render_page1(data):
         home_energy_icon=home_energy_icon,
         growth_icon=growth_icon,
         leaf_icon=leaf_icon,
+
+        solar_panel_icon=solar_panel_icon,
+        battery_icon=battery_icon,
+        production_icon=production_icon,
+        whole_home_backup_icon=whole_home_backup_icon,
+        roof_mount_icon=roof_mount_icon,
+        scope_document_icon=scope_document_icon,
+        
+        payback_icon=payback_icon,
+        roi_icon=roi_icon,
+        savings_dollar_icon=savings_dollar_icon,
+        
+        trophy_icon=trophy_icon,
+        check_icon=check_icon,
 
         **data
     )
