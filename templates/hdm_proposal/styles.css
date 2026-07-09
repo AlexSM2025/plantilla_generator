@@ -928,6 +928,7 @@ body {
     min-height: 300px;
     box-sizing: border-box;
 }
+.fh-platform-card,
 .fh-offset-card {
     background: #ffffff;
 }
