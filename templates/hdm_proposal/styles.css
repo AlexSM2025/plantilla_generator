@@ -770,7 +770,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 10px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -806,20 +806,20 @@ body {
    ========================================================= */
 
 .savings-icon-circle {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    border-radius: 50%;
-    border: 1px solid #f5a623;
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
+    border: none;
+    border-radius: 0;
 }
 
 .savings-main-icon {
-    width: 34px;
-    height: 34px;
+    width: 58px;
+    height: 58px;
     object-fit: contain;
 }
 
@@ -841,7 +841,7 @@ body {
 }
 
 .savings-main-value {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -1px;
