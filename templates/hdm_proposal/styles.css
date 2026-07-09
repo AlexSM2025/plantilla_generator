@@ -928,6 +928,13 @@ body {
     min-height: 300px;
     box-sizing: border-box;
 }
+.fh-offset-card {
+    background: #ffffff;
+}
+
+.fh-highlights-card {
+    background: #edf5ef;
+}
 
 .fh-card-header {
     font-size: 11px;
