@@ -899,12 +899,12 @@ body {
 
 
 /* =========================================================
-   FINANCIAL HIGHLIGHTS SECTION - COMPACT
+   FINANCIAL HIGHLIGHTS SECTION - SMALLER
    ========================================================= */
 
 .financial-highlights-section {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 /* =========================================================
@@ -913,21 +913,22 @@ body {
 
 .financial-highlights-top {
     display: grid;
-    grid-template-columns: 1.3fr 0.9fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1.28fr 0.88fr 0.98fr;
+    gap: 8px;
     align-items: stretch;
 }
 
 /* shared card */
 .fh-card {
-    background: #edf5ef;
-    border-radius: 16px;
-    padding: 14px 14px 12px;
+    border-radius: 14px;
+    padding: 12px 12px 10px;
     display: flex;
     flex-direction: column;
-    min-height: 300px;
+    min-height: 270px;
     box-sizing: border-box;
 }
+
+/* backgrounds */
 .fh-platform-card,
 .fh-offset-card {
     background: #ffffff;
@@ -938,12 +939,12 @@ body {
 }
 
 .fh-card-header {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 800;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.45px;
     color: #0b2747;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 /* =========================================================
@@ -957,29 +958,29 @@ body {
 .fh-platform-list {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 7px;
 }
 
 .fh-platform-item {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
 }
 
 .fh-platform-icon {
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
     border-radius: 50%;
-    background: #d9efe0;
+    background: #e9f3ec;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .fh-platform-icon img {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     object-fit: contain;
 }
 
@@ -991,33 +992,33 @@ body {
 }
 
 .fh-platform-title {
-    font-size: 13px;
+    font-size: 11.5px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.18;
     color: #0b2747;
 }
 
 .fh-platform-subtext {
-    font-size: 9px;
-    line-height: 1.3;
+    font-size: 8px;
+    line-height: 1.25;
     color: #5b6c78;
 }
 
-/* bottom note inside left card */
+/* bottom note */
 .fh-platform-note {
-    margin-top: 12px;
+    margin-top: 10px;
     background: #d7e7f8;
-    border-radius: 12px;
-    padding: 10px 10px;
+    border-radius: 11px;
+    padding: 9px 9px;
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
 }
 
 .fh-platform-note-icon {
-    width: 28px;
-    height: 28px;
-    min-width: 28px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
     border-radius: 50%;
     background: #ffffff;
     display: flex;
@@ -1026,37 +1027,33 @@ body {
 }
 
 .fh-platform-note-icon img {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     object-fit: contain;
 }
 
 .fh-platform-note-content {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
 }
 
 .fh-platform-note-title {
-    font-size: 10px;
+    font-size: 8.8px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.22;
     color: #0b2747;
 }
 
 .fh-platform-note-subtext {
-    font-size: 8px;
-    line-height: 1.3;
+    font-size: 7.2px;
+    line-height: 1.22;
     color: #4f6170;
 }
 
 /* =========================================================
    COLUMN 2 — OFFSET CARD
    ========================================================= */
-
-.fh-offset-card {
-    justify-content: flex-start;
-}
 
 .fh-offset-list {
     display: flex;
@@ -1068,63 +1065,59 @@ body {
 .fh-offset-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 0;
+    gap: 8px;
+    padding: 8px 0;
 }
 
 .fh-offset-icon {
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
     border-radius: 50%;
-    background: #d9efe0;
+    background: #e9f3ec;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .fh-offset-icon img {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     object-fit: contain;
 }
 
 .fh-offset-content {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
 }
 
 .fh-offset-label {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.2px;
+    line-height: 1.18;
+    letter-spacing: 0.15px;
     color: #0b2747;
     text-transform: uppercase;
 }
 
 .fh-offset-value {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 800;
     line-height: 1;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.35px;
     color: #20a55a;
 }
 
 .fh-offset-divider {
     height: 1px;
-    background: rgba(11, 39, 71, 0.12);
+    background: rgba(11, 39, 71, 0.10);
     width: 100%;
 }
 
 /* =========================================================
    COLUMN 3 — FINANCIAL HIGHLIGHTS CARD
    ========================================================= */
-
-.fh-highlights-card {
-    justify-content: flex-start;
-}
 
 .fh-highlight-list {
     display: flex;
@@ -1136,14 +1129,14 @@ body {
 .fh-highlight-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 0;
+    gap: 8px;
+    padding: 8px 0;
 }
 
 .fh-highlight-icon {
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
     border-radius: 50%;
     background: #d9efe0;
     display: flex;
@@ -1152,43 +1145,43 @@ body {
 }
 
 .fh-highlight-icon img {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     object-fit: contain;
 }
 
 .fh-highlight-content {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
 }
 
 .fh-highlight-label {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.2px;
+    line-height: 1.18;
+    letter-spacing: 0.15px;
     color: #0b2747;
     text-transform: uppercase;
 }
 
 .fh-highlight-value {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 800;
     line-height: 1;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.35px;
     color: #20a55a;
 }
 
 .fh-highlight-subtext {
-    font-size: 8px;
-    line-height: 1.3;
+    font-size: 7.4px;
+    line-height: 1.22;
     color: #5b6c78;
 }
 
 .fh-highlight-divider {
     height: 1px;
-    background: rgba(11, 39, 71, 0.12);
+    background: rgba(11, 39, 71, 0.10);
     width: 100%;
 }
 
@@ -1197,29 +1190,28 @@ body {
    ========================================================= */
 
 .fh-recommendation-banner {
-    margin-top: 10px;
+    margin-top: 8px;
     background: #f5a623;
-    border-radius: 16px;
+    border-radius: 14px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 0.95fr 2.05fr;
+    grid-template-columns: 0.92fr 2.08fr;
     align-items: stretch;
 }
 
-/* left orange block */
 .fh-recommendation-left {
     background: #f5a623;
-    padding: 14px 14px;
+    padding: 12px 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    gap: 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .fh-recommendation-trophy {
-    width: 46px;
-    height: 46px;
-    min-width: 46px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.18);
     display: flex;
@@ -1228,44 +1220,43 @@ body {
 }
 
 .fh-recommendation-trophy img {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
 }
 
 .fh-recommendation-left-content {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
 }
 
 .fh-recommendation-label {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 .fh-recommendation-title {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 800;
     line-height: 1;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.45px;
     color: #ffffff;
 }
 
 .fh-recommendation-subtext {
-    font-size: 9px;
-    line-height: 1.3;
+    font-size: 7.8px;
+    line-height: 1.2;
     color: rgba(255, 255, 255, 0.95);
-    max-width: 220px;
+    max-width: 190px;
 }
 
-/* right bullets block */
 .fh-recommendation-right {
-    padding: 14px 16px;
+    padding: 12px 14px;
     display: flex;
     align-items: center;
     background: #f5a623;
@@ -1275,20 +1266,20 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 18px;
-    row-gap: 8px;
+    column-gap: 14px;
+    row-gap: 6px;
 }
 
 .fh-recommendation-item {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 6px;
 }
 
 .fh-recommendation-check {
-    width: 14px;
-    height: 14px;
-    min-width: 14px;
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1296,20 +1287,14 @@ body {
 }
 
 .fh-recommendation-check img {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     object-fit: contain;
 }
 
 .fh-recommendation-text {
-    font-size: 9px;
-    line-height: 1.3;
+    font-size: 8px;
+    line-height: 1.22;
     color: #ffffff;
     font-weight: 500;
-}
-
-/* optional tighter top rows */
-.fh-offset-row:first-child,
-.fh-highlight-row:first-child {
-    padding-top: 8px;
 }
