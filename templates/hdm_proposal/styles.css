@@ -1299,3 +1299,140 @@ body {
     color: #ffffff;
     font-weight: 500;
 }
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.proposal-footer {
+    width: 100%;
+    background: #08244d;
+    border-radius: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+/* =========================
+   TOP ROW
+   ========================= */
+
+.footer-top {
+    display: flex;
+    align-items: stretch;
+    min-height: 64px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px 8px;
+    box-sizing: border-box;
+}
+
+.footer-item-financing {
+    width: 34%;
+}
+
+.footer-item-utility {
+    width: 18%;
+}
+
+.footer-item-advisor {
+    width: 30%;
+}
+
+.footer-item-learn {
+    width: 18%;
+}
+
+.footer-divider {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.18);
+    margin: 8px 0;
+    flex-shrink: 0;
+}
+
+.footer-item-icon {
+    width: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-item-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.footer-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-item-label {
+    font-size: 7.5px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.footer-item-main {
+    font-size: 8.5px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.footer-item-sub {
+    font-size: 8.5px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.footer-item-license {
+    font-size: 8.5px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f5a623;
+    margin-top: 2px;
+}
+
+/* HDM logo under financing partner text */
+.footer-item-logo {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item-logo img {
+    height: 16px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* =========================
+   BOTTOM STRAPLINE
+   ========================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 22px;
+    padding: 2px 12px 5px;
+    font-size: 6.5px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
