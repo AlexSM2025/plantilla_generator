@@ -1,11 +1,22 @@
 # app.py
 
 import streamlit as st
+from weasyprint import HTML
 
 from templates.integrated_backup.form import integrated_backup_form
 from templates.integrated_backup.render import render_integrated_backup
 from templates.hdm_proposal.render import render_page1
 from templates.hdm_proposal.form import hdm_proposal_form
+
+#==========================
+# FROM HTML TO PDF
+#==========================
+def html_to_pdf(html: str) -> bytes:
+    """
+    Convierte un HTML renderizado a PDF.
+    """
+    return HTML(string=html).write_pdf()
+
 
 # =========================
 # PAGE CONFIG
@@ -71,7 +82,7 @@ elif proposal_type == "HDM Proposal":
 
     if st.button("Generate Proposal"):
         #pdf = render_hdm_proposal(data)
-        pdf = render_page1(data)
+        pdf = html_to_pdf(html)
         
         st.download_button(
             label="Download Proposal PDF",
