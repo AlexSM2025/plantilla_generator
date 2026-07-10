@@ -1310,7 +1310,7 @@ body {
     background: #08244d;
     border-radius: 0;
     overflow: hidden;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 /* =========================
@@ -1320,7 +1320,7 @@ body {
 .footer-top {
     display: flex;
     align-items: stretch;
-    min-height: 45px;
+    min-height: 35px;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
 
