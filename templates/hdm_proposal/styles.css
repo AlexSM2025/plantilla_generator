@@ -1376,24 +1376,24 @@ body {
 }
 
 .footer-item-label {
-    font-size: 8.5px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: 0.35px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
 }
 
 .footer-item-main {
-    font-size: 7.5px;
+    font-size: 9.5px;
     font-weight: 600;
     line-height: 1.15;
     color: #ffffff;
 }
 
 .footer-item-sub {
-    font-size: 7.5px;
+    font-size: 8.5px;
     font-weight: 600;
     line-height: 1.15;
     color: #ffffff;
