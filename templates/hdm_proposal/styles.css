@@ -1017,8 +1017,8 @@ body {
 }
 
 .fh-platform-note-icon {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     min-width: 24px;
     border-radius: 50%;
     background: #ffffff;
@@ -1028,8 +1028,8 @@ body {
 }
 
 .fh-platform-note-icon img {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     object-fit: contain;
 }
 
@@ -1066,24 +1066,24 @@ body {
 .fh-offset-row {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     padding: 8px 0;
 }
 
 .fh-offset-icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     min-width: 30px;
     border-radius: 50%;
-    background: #e9f3ec;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .fh-offset-icon img {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
@@ -1094,8 +1094,8 @@ body {
 }
 
 .fh-offset-label {
-    font-size: 8px;
-    font-weight: 700;
+    font-size: 10px;
+    font-weight: 750;
     line-height: 1.18;
     letter-spacing: 0.15px;
     color: #0b2747;
@@ -1103,7 +1103,7 @@ body {
 }
 
 .fh-offset-value {
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.35px;
