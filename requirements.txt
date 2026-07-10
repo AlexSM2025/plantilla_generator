@@ -2,3 +2,4 @@ streamlit
 pillow
 reportlab
 jinja2
+weasyprint
