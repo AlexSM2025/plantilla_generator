@@ -1302,7 +1302,7 @@ body {
 
 
 /* =========================================================
-   FOOTER
+   FOOTER - COMPACT
    ========================================================= */
 
 .proposal-footer {
@@ -1310,7 +1310,7 @@ body {
     background: #08244d;
     border-radius: 0;
     overflow: hidden;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 /* =========================
@@ -1320,15 +1320,15 @@ body {
 .footer-top {
     display: flex;
     align-items: stretch;
-    min-height: 64px;
+    min-height: 52px;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .footer-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 14px 8px;
+    gap: 8px;
+    padding: 7px 12px 5px;
     box-sizing: border-box;
 }
 
@@ -1351,21 +1351,21 @@ body {
 .footer-divider {
     width: 1px;
     background: rgba(255, 255, 255, 0.18);
-    margin: 8px 0;
+    margin: 6px 0;
     flex-shrink: 0;
 }
 
 .footer-item-icon {
-    width: 36px;
-    min-width: 36px;
+    width: 30px;
+    min-width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .footer-item-icon img {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
@@ -1376,46 +1376,46 @@ body {
 }
 
 .footer-item-label {
-    font-size: 7.5px;
+    font-size: 6.5px;
     font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.45px;
+    line-height: 1.05;
+    letter-spacing: 0.35px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .footer-item-main {
-    font-size: 8.5px;
+    font-size: 7.5px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.15;
     color: #ffffff;
 }
 
 .footer-item-sub {
-    font-size: 8.5px;
+    font-size: 7.5px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.15;
     color: #ffffff;
 }
 
 .footer-item-license {
-    font-size: 8.5px;
+    font-size: 7.5px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
     color: #f5a623;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 /* HDM logo under financing partner text */
 .footer-item-logo {
-    margin-top: 4px;
+    margin-top: 3px;
     display: flex;
     align-items: center;
 }
 
 .footer-item-logo img {
-    height: 16px;
+    height: 13px;
     width: auto;
     object-fit: contain;
 }
@@ -1428,11 +1428,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 22px;
-    padding: 2px 12px 5px;
-    font-size: 6.5px;
+    min-height: 16px;
+    padding: 1px 10px 3px;
+    font-size: 5.5px;
     font-weight: 600;
-    letter-spacing: 2.6px;
+    letter-spacing: 2px;
     color: #ffffff;
     text-transform: uppercase;
 }
