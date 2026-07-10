@@ -26,7 +26,8 @@ proposal_type = st.selectbox(
     "Proposal Type",
     [
         "Integrated Backup",
-        "HDM Proposal"
+        "HDM Proposal",
+        "Propel Proposal"
     ]
 )
 
@@ -50,7 +51,7 @@ if proposal_type == "Integrated Backup":
         )
 
 # =========================
-# FUTURE TEMPLATE
+# HDM PROPOSAL
 # =========================
 
 elif proposal_type == "HDM Proposal":
@@ -68,13 +69,41 @@ elif proposal_type == "HDM Proposal":
 #
 #     data = hdm_proposal_form()
 #
-#     if st.button("Generate Proposal"):
+     if st.button("Generate Proposal"):
+         pdf = render_hdm_proposal(data)
+
+         st.download_button(
+             label="Download Proposal PDF",
+             data=pdf,
+             file_name="HDM_proposal.pdf",
+             mime="application/pdf"
+         )
+
+# =========================
+# PROPEL PROPOSAL
+# =========================
+
+#elif proposal_type == "Propel Proposal":
+
+    #data = propel_proposal_form()
+
+    #html = render_page1(data)
+    
+    #st.components.v1.html(
+        #html,
+        #width=1400,
+        #height=900,
+        #scrolling=True
+    #)
+
+#     data = hdm_proposal_form()
 #
+#     if st.button("Generate Proposal"):
 #         pdf = render_hdm_proposal(data)
 #
 #         st.download_button(
 #             label="Download Proposal PDF",
 #             data=pdf,
-#             file_name="proposal.pdf",
+#             file_name="HDM_proposal.pdf",
 #             mime="application/pdf"
 #         )
