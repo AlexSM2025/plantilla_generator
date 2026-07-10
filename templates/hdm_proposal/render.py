@@ -41,6 +41,7 @@ def render_page1(data):
     maelo_logo = img_to_base64(os.path.join(assets_dir, "maelo_logo.png"))
     bright_logo = img_to_base64(os.path.join(assets_dir, "bright_logo.png"))
     hdm_logo = img_to_base64(os.path.join(assets_dir, "hdm_logo.png"))
+    hdm_logo_white = img_to_base64(os.path.join(assets_dir, "hdm_logo_white.png"))
     hero_image = img_to_base64(
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "images", "hero_banner.png")
     )
@@ -148,6 +149,7 @@ def render_page1(data):
         maelo_logo=maelo_logo,
         bright_logo=bright_logo,
         hdm_logo=hdm_logo,
+        hdm_logo_white=hdm_logo_white,
 
         hero_image=hero_image,
 
