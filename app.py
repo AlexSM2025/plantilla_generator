@@ -66,19 +66,19 @@ elif proposal_type == "HDM Proposal":
         height=900,
         scrolling=True
     )
-#
-#     data = hdm_proposal_form()
-#
-     if st.button("Generate Proposal"):
-         #pdf = render_hdm_proposal(data)
-         pdf = render_page1(data)
 
-         st.download_button(
-             label="Download Proposal PDF",
-             data=pdf,
-             file_name="HDM_proposal.pdf",
-             mime="application/pdf"
-         )
+    #data = hdm_proposal_form()
+
+    if st.button("Generate Proposal"):
+        #pdf = render_hdm_proposal(data)
+        pdf = render_page1(data)
+        
+        st.download_button(
+            label="Download Proposal PDF",
+            data=pdf,
+            file_name="HDM_proposal.pdf",
+            mime="application/pdf"
+        )
 
 # =========================
 # PROPEL PROPOSAL
