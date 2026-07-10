@@ -973,15 +973,15 @@ body {
     height: 30px;
     min-width: 30px;
     border-radius: 50%;
-    background: #e9f3ec;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .fh-platform-icon img {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     object-fit: contain;
 }
 
