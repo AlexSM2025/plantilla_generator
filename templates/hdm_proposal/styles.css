@@ -1130,13 +1130,13 @@ body {
 .fh-highlight-row {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     padding: 8px 0;
 }
 
 .fh-highlight-icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     min-width: 30px;
     border-radius: 50%;
     background: #d9efe0;
@@ -1146,8 +1146,8 @@ body {
 }
 
 .fh-highlight-icon img {
-    width: 15px;
-    height: 15px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
@@ -1158,7 +1158,7 @@ body {
 }
 
 .fh-highlight-label {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 1.18;
     letter-spacing: 0.15px;
@@ -1167,7 +1167,7 @@ body {
 }
 
 .fh-highlight-value {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.35px;
@@ -1175,7 +1175,7 @@ body {
 }
 
 .fh-highlight-subtext {
-    font-size: 7.4px;
+    font-size: q0px;
     line-height: 1.22;
     color: #5b6c78;
 }
@@ -1221,8 +1221,8 @@ body {
 }
 
 .fh-recommendation-trophy img {
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
@@ -1250,7 +1250,7 @@ body {
 }
 
 .fh-recommendation-subtext {
-    font-size: 7.8px;
+    font-size: 10px;
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.95);
     max-width: 190px;
@@ -1294,10 +1294,10 @@ body {
 }
 
 .fh-recommendation-text {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.22;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
