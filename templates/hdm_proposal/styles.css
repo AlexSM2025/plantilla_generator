@@ -1334,6 +1334,8 @@ body {
 
 .footer-item-financing {
     width: 30%;
+    padding-top: 9px;
+    padding-bottom: 2px;
 }
 
 .footer-item-utility {
