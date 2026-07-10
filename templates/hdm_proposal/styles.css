@@ -1333,7 +1333,7 @@ body {
 }
 
 .footer-item-financing {
-    width: 34%;
+    width: 30%;
 }
 
 .footer-item-utility {
@@ -1415,7 +1415,7 @@ body {
 }
 
 .footer-item-logo img {
-    height: 16px;
+    height: 20px;
     width: auto;
     object-fit: contain;
 }
