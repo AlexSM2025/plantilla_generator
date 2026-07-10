@@ -1017,8 +1017,8 @@ body {
 }
 
 .fh-platform-note-icon {
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     min-width: 24px;
     border-radius: 50%;
     background: #ffffff;
@@ -1028,8 +1028,8 @@ body {
 }
 
 .fh-platform-note-icon img {
-    width: 13px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
 }
 
