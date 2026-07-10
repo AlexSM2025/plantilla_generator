@@ -1376,7 +1376,7 @@ body {
 }
 
 .footer-item-label {
-    font-size: 6.5px;
+    font-size: 8.5px;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: 0.35px;
@@ -1415,7 +1415,7 @@ body {
 }
 
 .footer-item-logo img {
-    height: 13px;
+    height: 16px;
     width: auto;
     object-fit: contain;
 }
