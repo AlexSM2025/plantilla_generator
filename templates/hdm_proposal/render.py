@@ -125,7 +125,7 @@ def render_page1(data):
     )
 
     financing_partner_icon = img_to_base64(
-        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "financing-partner.png")
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "financing_partner.png")
     )
     
     utility_icon = img_to_base64(
