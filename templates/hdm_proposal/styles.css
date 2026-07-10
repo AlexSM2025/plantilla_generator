@@ -914,8 +914,8 @@ body {
 
 .financial-highlights-top {
     display: grid;
-    grid-template-columns: 1.28fr 0.88fr 0.98fr;
-    gap: 8px;
+    grid-template-columns: 1.20fr 0.96fr 0.98fr;
+    gap: 5px;
     align-items: stretch;
 }
 
