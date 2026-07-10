@@ -124,6 +124,22 @@ def render_page1(data):
         os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "check_icon.png")
     )
 
+    financing_partner_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "financing-partner.png")
+    )
+    
+    utility_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "utility.png")
+    )
+    
+    advisor_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "advisor.png")
+    )
+    
+    globe_icon = img_to_base64(
+        os.path.join(base_dir, "..", "..", "templates", "hdm_proposal", "assets", "icons", "globe.png")
+    )
+
 
     html = template.render(
 
@@ -158,6 +174,11 @@ def render_page1(data):
         
         trophy_icon=trophy_icon,
         check_icon=check_icon,
+
+        financing_partner_icon=financing_partner_icon,
+        utility_icon=utility_icon,
+        advisor_icon=advisor_icon,
+        globe_icon=globe_icon,
 
         **data
     )
