@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap");
+
 @page {
     size: A4 portrait;
     margin: 0;
@@ -12,11 +14,14 @@
 body {
     font-family: "Barlow", sans-serif;
     background: #f5f7fb;
+    margin:0;
+    padding:0;
+    width:210mm;
 }
 
 .page {
     width: 210mm;
-    min-height: 297mm;
+    height: 297mm;
 
     display: flex;
     flex-direction: column;
@@ -24,7 +29,7 @@ body {
     background: white;
     margin: auto;
 
-    overflow: visible;
+    overflow: hidden;
 }
 
 /* ===========================
