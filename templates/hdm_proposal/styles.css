@@ -390,7 +390,7 @@ main {
 ========================================== */
 
 .if-waiting-block {
-    flex: 0.9;
+    flex: 0.5;
 
     display: flex;
     flex-direction: column;
