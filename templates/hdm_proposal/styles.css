@@ -27,9 +27,19 @@ body {
     flex-direction: column;
 
     background: white;
-    margin: auto;
 
     overflow: hidden;
+}
+
+main {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    width: 100%;
 }
 
 /* ===========================
@@ -60,7 +70,7 @@ body {
 /* Maelo */
 
 .maelo-logo {
-    width: 210px;
+    width: 190px;
     height: auto;
     margin-top: 4px;
     display: block;
@@ -94,7 +104,7 @@ body {
     color:#0A4EA3;
     font-weight:600;
 
-    margin-left: -6px;
+    margin-left: -10px;
 }
 
 /* Divider */
