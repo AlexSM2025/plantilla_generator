@@ -8,6 +8,10 @@ def img_to_base64(path):
         encoded = base64.b64encode(img.read()).decode()
         return f"data:image/png;base64,{encoded}"
 
+def font_to_base64(path):
+    with open(path, "rb") as font:
+        return base64.b64encode(font.read()).decode()
+
 def load_css():
     base_dir = os.path.dirname(__file__)
 
@@ -30,6 +34,27 @@ def render_page1(data):
     )
 
     template = env.get_template("page1.html")
+
+    # =========================
+    # RUTAS CORRECTAS (FONT)
+    # =========================
+
+    fonts_dir = os.path.abspath(
+        os.path.join(base_dir, "..", "..", "assets", "fonts")
+    )
+    
+    barlow_regular = font_to_base64(
+        os.path.join(fonts_dir, "Barlow-Regular.ttf")
+    )
+    
+    barlow_semibold = font_to_base64(
+        os.path.join(fonts_dir, "Barlow-SemiBold.ttf")
+    )
+    
+    barlow_bold = font_to_base64(
+        os.path.join(fonts_dir, "Barlow-Bold.ttf")
+    )
+    
 
     # =========================
     # RUTAS CORRECTAS (CLAVE)
@@ -145,6 +170,10 @@ def render_page1(data):
     html = template.render(
 
         css=css,
+
+        barlow_regular=barlow_regular,
+        barlow_semibold=barlow_semibold,
+        barlow_bold=barlow_bold,
 
         maelo_logo=maelo_logo,
         bright_logo=bright_logo,
