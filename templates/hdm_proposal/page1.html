@@ -8,6 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+
+    @font-face {
+        font-family: "Barlow";
+        src: url("data:font/ttf;base64,{{ barlow_regular }}") format("truetype");
+        font-weight: 400;
+    }
+    
+    @font-face {
+        font-family: "Barlow";
+        src: url("data:font/ttf;base64,{{ barlow_semibold }}") format("truetype");
+        font-weight: 600;
+    }
+    
+    @font-face {
+        font-family: "Barlow";
+        src: url("data:font/ttf;base64,{{ barlow_bold }}") format("truetype");
+        font-weight: 700;
+    }
+    
+    {{ css }}
+    
+    </style>
+
+    <style>
         {{ css }}
     </style>
 
