@@ -12,10 +12,10 @@ from templates.hdm_proposal.form import hdm_proposal_form
 # FROM HTML TO PDF
 #==========================
 def html_to_pdf(html: str) -> bytes:
-    """
-    Convierte un HTML renderizado a PDF.
-    """
-    return HTML(string=html).write_pdf()
+    return HTML(
+        string=html,
+        base_url="."
+    ).write_pdf()
 
 
 # =========================
